@@ -1,49 +1,111 @@
-# Healthcare Symptom Checker
+# 🩺 Healthcare Symptom Checker
 
-A Streamlit app to gather symptoms and medical history, identify possible conditions, and provide general health and wellness advice. This app is intended for informational purposes only and does not replace professional medical care.
+An AI-powered **Healthcare Symptom Checker** built with **Streamlit** and an **OpenRouter-compatible LLM**. The application collects user symptoms and medical history, asks intelligent follow-up questions, suggests possible health conditions, recommends appropriate medical attention, and provides general wellness guidance. It is designed for **informational purposes only** and is **not a substitute for professional medical advice or diagnosis**.
 
-## Features
+---
 
-- Symptom selection form with duration, severity, and medical history
-- Local condition inference for fast guidance
-- AI-assisted summary using OpenRouter LLM
-- General health chat for non-diagnostic wellness questions
-- GitHub-safe setup with `.env` ignored and `.env.example` provided
+## ✨ Features
 
-## Setup
+- 🤒 Symptom assessment with duration and severity tracking
+- 📝 Medical history collection
+- 🤖 AI-powered follow-up questions for better symptom evaluation
+- 🩺 Possible condition identification based on reported symptoms
+- 🚑 Guidance on whether medical attention may be needed
+- 💬 Interactive health and wellness chat
+- ⚡ Powered by OpenRouter-compatible Large Language Models
+- 🎨 Clean and responsive Streamlit interface
 
-1. Clone the repository or download the files.
-2. Create a Python environment.
-3. Install dependencies:
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **Streamlit**
+- **OpenRouter API**
+- **Large Language Models (LLMs)**
+- **python-dotenv**
+
+---
+
+## 📂 Project Structure
+
+```text
+.
+├── app.py
+├── requirements.txt
+├── .env.example
+├── README.md
+```
+
+---
+
+## 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/healthcare-symptom-checker.git
+cd healthcare-symptom-checker
+```
+
+Create and activate a virtual environment (recommended):
+
+### Windows
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+### macOS / Linux
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Copy `.env.example` to `.env` and add your OpenRouter API key:
+---
 
-```bash
-copy .env.example .env
+## ⚙️ Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+OPENROUTER_API_KEY=your_openrouter_api_key
+LLM_BASE_URL=https://openrouter.ai/api/v1/chat/completions
+LLM_MODEL=poolside/laguna-m.1:free
 ```
 
-5. Run the app:
+---
+
+## ▶️ Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
-## Environment variables
+The application will automatically open in your default browser.
 
-Add these variables to `.env`:
+---
 
-```env
-OPENROUTER_API_KEY=REPLACE_WITH_OPENROUTER_KEY
-LLM_BASE_URL=https://openrouter.ai/api/v1/chat/completions
-LLM_MODEL=poolside/laguna-m.1:free
-```
+---
 
-## Notes
+## 🌟 Future Enhancements
 
-- This app is not a medical diagnosis tool.
-- Always seek professional medical attention for serious or worsening symptoms.
-- Do not commit your real `.env` file to GitHub.
+- 🧠 More advanced symptom reasoning
+- 🎙️ Voice-based symptom reporting
+- 📄 Downloadable health summaries (PDF)
+- 📊 Symptom history tracking
+- 👨‍⚕️ Doctor and hospital recommendations
+- 🌐 Multi-language support
+- 📱 Mobile-friendly interface
+
+---
+
+⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
