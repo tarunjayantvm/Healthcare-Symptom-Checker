@@ -108,4 +108,6 @@ The application will automatically open in your default browser.
 
 ---
 
+Deployed Link : https://healthcare-symptom-checker-ghxmspmc5ep6dbusxmecsp.streamlit.app/
+
 ⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
